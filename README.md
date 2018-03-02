@@ -1,4 +1,4 @@
-Fatigue and performance
+#Fatigue and performance
 
 This project aims to help capture data on fatigue and performance
 
@@ -7,7 +7,7 @@ overall framework.
 
 Based upon Django 2.0.2
 
-Overall framework of smaller apps:-
+#Overall framework of smaller apps:-
 
 1. ai - for customizing responses based upon machine learning systems
 Status - development not yet started

@@ -6,14 +6,12 @@ class CreateRotaTest(FunctionalTest):
 
     def test_can_create_a_rota_shift(self):
 
-        # Kate has heard about the research study and decided she wants to take
-        # part and goes to it's homepage
-
+        # Kate is a researcher and she is trying to enter a shift for a participant
+        # She is invited to log into the site
         self.browser.get(self.live_server_url)
+        # Once succesfuly logged in Kate is presented with current active particpants
 
-        # She notices the page title and header mention fatigue and performance
-
-        # She is invited to enter a new rota shift
+        # She selects one participant x and looks to enter new shift for today
 
         # The browser refreshes and the new rota shift time is displayed
 
@@ -21,3 +19,15 @@ class CreateRotaTest(FunctionalTest):
 
 
     def test_can_confirm_a_rota_shift(self):
+
+        # Participant x(Dave) logins in to site
+
+        # Dave is shown his expected shift for today
+
+        # Dave is asked to confirm if this is correct
+
+        # He confirms yes this shift is correct
+
+        # Browser reloads thanking him for confimring shift is correct
+
+        self.fail('Write me')

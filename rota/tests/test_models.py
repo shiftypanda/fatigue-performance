@@ -8,6 +8,7 @@ from rota.models import Shift
 class ShiftModelTest(TestCase):
 
     def test_can_create_a_shift_and_save_it(self):
-        now = self.timezone.now()
-        shift = Shift.objects.create(now)
+        now = timezone.now().date
+        shift = Shift.objects.create()
+        shift.date = timezone.now().date
         self.assertEqual(shift.date, now)

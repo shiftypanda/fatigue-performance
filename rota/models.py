@@ -3,6 +3,8 @@ from django.utils import timezone
 
 import datetime
 
+current_date = timezone.now
+
 # Create your models here.
 class Shift(models.Model):
-    pass
+    start_time = models.DateTimeField(default=current_date)
